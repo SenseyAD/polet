@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Background with opacity</title>
+    <style>
+        /*::shadowdiv.titlebox {
+            background-image: url('logo-piri.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #fff;
+            max-width: 840px;
+            margin: 0px auto;
+            padding: 20rem;
+            display: block;
+            position: relative;
+        }
+        
+        div.titlebox:after {
+            content: "";
+            background-color: #000;
+            opacity: .1;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: 1;
+            padding-top: 50%;
+        } */
+        
+        div {
+            max-width: 75rem;
+            height: 50rem;
+            display: block;
+            position: relative;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px blue solid;
+        }
+        
+        div::after {
+            content: "";
+            background: url(./img/img1.jpg) no-repeat center;
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="titlebox">
+        <div class="after"></div>
+    </div>
+</body>
+
+</html>
