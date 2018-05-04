@@ -9,15 +9,15 @@ body {
     min-width: 25rem;  
 }
 .container {     
-    max-width: 70rem;
+    max-width: 65rem;
     height: 65rem;
     margin: 0;
     margin-left:auto;
     margin-right: auto;    
 }
 .container-mission {     
-    max-width: 70rem;
-    height: 60rem;
+    max-width: 65rem;
+    height: 50rem;
     margin: 0;
     margin-left:auto;
     margin-right: auto;    
@@ -26,76 +26,40 @@ body {
 /* header */
 .header {
     position: relative;
-    background: #fff8e2;    
+    background: rgb(255, 248, 226);    
     width: 100%;
-    height: 7rem;
+    height: 6rem;
     box-shadow: #f39b16 0 1px 3px;
 }
 .img {    
     position: absolute;
-    
+    height: 6rem; 
     width: 10rem;
-    
 }
-
 .nav {
     position: absolute;
     width: 80%; 
     right: 0;   
     padding: 20px;
     list-style-type: none;
-    text-align: right;  
-    overflow: hidden;
-    
+    text-align: right;    
 }
-.nav li  {
+.nav li {
     display: inline-block;
-    
     text-transform: uppercase;
     font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;     
     font-family: fantasy;
 }
- .nav li a, .dropbtn {
-    display: inline-block;
- }
-
-.nav li a {
+.nav a {
     text-decoration: none;    
     color: #f5b657;
 }
-.nav li a:hover, .dropdown:hover .dropbtn {
+.nav a:hover {
     color: #ffc876;
-    text-shadow:#7a5010 2px 2px 2px; 
-    
+    text-shadow:#7a5010 2px 2px 2px;    
 }
-.nav li.dropdown {
-    display: inline-block;
-}
-
-/* dropdown */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 10rem;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 10;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.nav .dropdown:hover .dropdown-content {
-    display: block;
-}
-
 .donate {    
     right: 10px;
     padding: 8px;
@@ -107,11 +71,6 @@ body {
 .donate a {
     color:  #fff7ea;    
 }
-
-
-
-
-
 
 /* main -polet */
 .main {
@@ -126,7 +85,6 @@ body {
     height: 100%;
     z-index: -1;
 }
-
 .polet {
     position: absolute;
     padding-left: 3rem;
@@ -159,7 +117,6 @@ body {
 /* mission */
 .mission-img {    
     position: absolute;
-    left: 0;
     overflow: auto;
     width: 100%;
     height: 80%;
@@ -173,10 +130,6 @@ body {
     color: #755d1e;
     padding-left: 9rem;
     padding-right: 8rem;    
-}
-.text a{
-    text-decoration: none;
-    color: #755d1e;
 }
 .text-center {
     text-align: center;
@@ -193,72 +146,14 @@ body {
     width: 50%;
     padding: 2.5rem;
 }
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
 /* projects */
 
-.projects {
-    position: relative;
-    padding-left: 10px;
-    height: 10rem;
-    font-size: 1.5rem;
-    font-family: Segoe Script;
-    font-weight: bold;
-    float: left;
-    
-    padding: 2.5rem;
-}
-.projects a:hover {
-    text-shadow: #f39316 1px 0 2px;
-}
-.projects a {
-    text-decoration: none;
-    color: #755d1e;
-}
-.img-project {
-   
-    width: 6rem;
-    height: 5rem;
-    float: left;
-}
-.img-project:hover {
-    height: 5.2rem;
-    width: 6.3rem;
-}
-.text-projects {
-    font-size: 1rem;
-    font-family: fantasy;
-    color:#755d1e;
-    width: 85%;
-    float: right;
-    
-}
-/* project no*/
-.prono-text {
-    overflow: auto;
-    color: #755d1e;
-    padding: 1rem;
-    font-size: 1.1rem;
-    
-}
-.prono-text p{
-    text-indent:1rem;
-}
-.prono-text h3{
-    text-align: center;
-}
-.prono-text img {
-    float: left;
-    padding: 1 rem;
-    padding-right: 3rem;
-   
-}
+
 
 
 /* footer */
@@ -279,27 +174,12 @@ body {
 @media only screen and (max-width: 60rem){
     .container{
         height: 50rem;
-        
     }
-
 } 
 @media only screen and (max-width: 50rem){
-    .container {
+    .container{
         height: 40rem;
-        
-        
     }
-    .container-mission {
-        height: 40rem;
-        
-    }
-    .projects {
-        height: 25rem;
-    }
-    
-    .header {
-        height: 9rem;
-     }
 } 
 @media only screen and (max-width: 40rem){
     .container{
@@ -312,7 +192,7 @@ body {
         height: 35rem;
     }
     .header {
-       height: 12rem;
+       height: 10rem;
     }
     .img {        
         top: 0;
