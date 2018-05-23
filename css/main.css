@@ -208,7 +208,7 @@ body {
 .text-polet {
     padding-left: 10px;
     font-size: 2rem;
-    font-family: Segoe Script, fantasy;
+    font-family: 'Gloria Hallelujah', cursive, 'Segoe Script', fantasy;
     font-weight: bold;
 }
 
@@ -335,7 +335,7 @@ body {
         height: 35rem;
     }
     .header {
-        height: 12rem;
+        height: 13rem;
         padding-top: 0;
     }
     .img {
@@ -345,7 +345,6 @@ body {
     .nav li {
         display: block;
         text-align: right;
-        padding-top: 0;
         margin-top: 0;
     }
     .projects {
